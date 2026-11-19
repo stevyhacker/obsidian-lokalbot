@@ -1,0 +1,144 @@
+.lokalbot-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4-3);
+  padding: var(--size-4-3);
+}
+
+.lokalbot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-4-2);
+}
+
+.lokalbot-title {
+  font-weight: var(--font-semibold);
+  font-size: var(--font-ui-medium);
+}
+
+.lokalbot-header-actions {
+  display: flex;
+  gap: var(--size-4-1);
+}
+
+.lokalbot-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-4-1);
+}
+
+.lokalbot-tab {
+  width: 100%;
+  font-size: var(--font-ui-small);
+}
+
+.lokalbot-tab.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.lokalbot-body,
+.lokalbot-search-results,
+.lokalbot-modal-results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4-2);
+}
+
+.lokalbot-card {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: var(--size-4-3);
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4-2);
+}
+
+.lokalbot-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--size-4-2);
+}
+
+.lokalbot-card-title {
+  font-weight: var(--font-semibold);
+  font-size: var(--font-ui-medium);
+}
+
+.lokalbot-card-meta,
+.lokalbot-muted {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  margin: 0;
+}
+
+.lokalbot-card-meta.is-overdue {
+  color: var(--text-error);
+}
+
+.lokalbot-badge {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  padding: 1px 6px;
+  white-space: nowrap;
+}
+
+.lokalbot-snippet,
+.lokalbot-answer-text {
+  margin: 0;
+  font-size: var(--font-ui-small);
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.lokalbot-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-4-2);
+}
+
+.lokalbot-ask-form {
+  display: flex;
+  gap: var(--size-4-2);
+  margin-bottom: var(--size-4-2);
+}
+
+.lokalbot-search-input {
+  flex: 1;
+  width: 100%;
+}
+
+.lokalbot-section-label {
+  font-size: var(--font-ui-smaller);
+  font-weight: var(--font-semibold);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lokalbot-code {
+  display: block;
+  padding: var(--size-4-2);
+  border-radius: var(--radius-s);
+  background-color: var(--background-primary);
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+  word-break: break-all;
+}
+
+.lokalbot-source-list {
+  margin: 0;
+  padding-left: var(--size-4-4);
+}
+
+.lokalbot-error {
+  color: var(--text-error);
+  font-size: var(--font-ui-small);
+  margin: 0;
+}

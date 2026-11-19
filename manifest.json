@@ -1,0 +1,10 @@
+{
+  "id": "lokalbot",
+  "name": "LokalBot",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Search, sync, and ask your local LokalBot meeting notes, transcripts, and action items with zero cloud uploads.",
+  "author": "Stevan Bogosavljević",
+  "authorUrl": "https://www.lokalbot.com",
+  "isDesktopOnly": true
+}

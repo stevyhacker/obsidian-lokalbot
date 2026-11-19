@@ -1,0 +1,33 @@
+{
+  "name": "obsidian-lokalbot",
+  "version": "0.1.0",
+  "description": "Search, sync, and ask your local LokalBot meeting notes, transcripts, and action items in Obsidian.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "lint": "eslint src",
+    "test": "node --experimental-strip-types --test test/*.test.ts"
+  },
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "lokalbot",
+    "meeting-notes",
+    "local-ai",
+    "transcription"
+  ],
+  "author": "Stevan Bogosavljević",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "builtin-modules": "^4.0.0",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-obsidianmd": "latest",
+    "obsidian": "latest",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
+  }
+}

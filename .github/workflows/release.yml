@@ -58,8 +58,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           TAG="${GITHUB_REF#refs/tags/}"
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            gh release upload "$TAG" --clobber release-assets/main.js release-assets/manifest.json release-assets/styles.css
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber release-assets/main.js release-assets/manifest.json release-assets/styles.css
           else
-            gh release create "$TAG" --title "$TAG" --generate-notes release-assets/main.js release-assets/manifest.json release-assets/styles.css
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" --generate-notes release-assets/main.js release-assets/manifest.json release-assets/styles.css
           fi
